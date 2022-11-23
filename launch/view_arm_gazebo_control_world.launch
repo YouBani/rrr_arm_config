@@ -17,11 +17,11 @@
 
 
   <!-- Launch Gazebo  -->
-  <include file="$(find rrr-arm)/launch/view_arm_gazebo_world.launch" />   
+  <include file="$(find rrr_arm_config)/launch/view_arm_gazebo_world.launch" />   
 
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find rrr-arm)/config/rrr_arm_gazebo_control.yaml" command="load"/>
+  <rosparam file="$(find rrr_arm_config)/config/rrr_arm_gazebo_control.yaml" command="load"/>
 
 
   <!-- spawn the controllers -->
